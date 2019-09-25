@@ -16,8 +16,9 @@ rundll32 PowerShdll,main -f <path>       Run the script passed as argument
 rundll32 PowerShdll,main -w      Start an interactive console in a new window (Default)
 rundll32 PowerShdll,main -i      Start an interactive console in this console
 If you do not have an interractive console, use -n to avoid crashes on output
-```
 （测试失败：提示main入口函数不存在。）
+```
+
 ### Alternatives (Credit to SubTee for these techniques):
 
 ```
