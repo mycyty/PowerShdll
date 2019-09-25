@@ -17,6 +17,7 @@ rundll32 PowerShdll,main -w      Start an interactive console in a new window (D
 rundll32 PowerShdll,main -i      Start an interactive console in this console
 If you do not have an interractive console, use -n to avoid crashes on output
 ```
+（测试失败：提示main入口函数不存在。）
 ### Alternatives (Credit to SubTee for these techniques):
 
 ```
@@ -29,6 +30,7 @@ If you do not have an interractive console, use -n to avoid crashes on output
 3. 
     x86 C:\Windows\Microsoft.NET\Framework\v4.0.30319\regasm.exe /U PowerShdll.dll
     x64 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /U PowerShdll.dll
+    （测试成功，能进入PowerShell交互状态。）
 4. 
     regsvr32 /s  /u PowerShdll.dll -->Calls DllUnregisterServer
     regsvr32 /s PowerShdll.dll --> Calls DllRegisterServer
